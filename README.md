@@ -1,8 +1,8 @@
 # hosting-provider Well-Known Resource Identifier
 
-URI suffix: hosting-provider
-Change controller: Automattic Inc. <https://automattic.com>
-Specification document(s): https://github.com/Automattic/hosting-provider
+URI suffix: hosting-provider  
+Change controller: Automattic Inc. <https://automattic.com>  
+Specification document(s): https://github.com/Automattic/hosting-provider  
 
 ## Purpose
 
@@ -13,7 +13,8 @@ The hosting-provider well-known resource endpoint is a lightweight response that
 A request for `.well-known/hosting-provider` at a domain or subdomain served by a participating hosting provider is expected to return a response of content-type text/plain containing an unformatted text string. This string can be any of:
 - A valid URL for the hosting provider, generally the provider's home page, e.g. https://wordpress.com
 - The hosting provider's main domain used for conducting business, e.g. wordpress.com
-- The hosting provider's registered business name or text service mark, e.g. WordPress.com
+- The hosting provider's registered business name or text service mark, e.g. WordPress.com  
+
 It is possible for sites at a domain and its various subdomains to return different values for this resource if they are hosted with different providers.
 
 A hosting provider that allows resellers to operate may optionally substitute the reseller identifier for its own as a response to requests to this endpoint for sites hosted by the reseller accounts.
